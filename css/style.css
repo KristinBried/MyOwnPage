@@ -37,7 +37,7 @@ html {
 
 .contact-icon {
     height: 5vh;
-    transition: transform .2s;
+    transition: transform 0.2s;
     margin: 10px;
 }
 

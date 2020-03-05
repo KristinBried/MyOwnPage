@@ -11,13 +11,15 @@
   <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css.map">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link rel="stylesheet" type="text/css" href="css\style.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <a id="top"></a>
 
 <div class="wrapper">
 <div class="first-container">
-<img class="my-photo" src="images/my-photo-3.jpeg" alt="My photo">
+<img class="my-photo" src="images/bilde3.jpg" alt="My photo">
 <br>
 <h1 class="title-name">Kristīne Briede</h1>
 
@@ -35,7 +37,7 @@ src="images/location.png" alt="icon-with-location">
     <div class="w3-container">
       <span onclick="document.getElementById('id01').style.display='none'"
       class="w3-closebtn">&times;</span>
-      <p class="icon-modal"><br>+371 26 26 24 34<br></p>
+      <p class="icon-modal collapse-info"><br>+371 26 26 24 34<br></p>
     </div>
   </div>
 </div>
@@ -45,7 +47,12 @@ src="images/location.png" alt="icon-with-location">
     <div class="w3-container">
       <span onclick="document.getElementById('id02').style.display='none'"
       class="w3-closebtn">&times;</span>
-      <p class="icon-modal"><br>kristine@briede.lv<br></p>
+      <br>
+      To send an e-mail, press on link below or copy the e-mail and write your own!
+      <p class="icon-modal"><br><a class="collapse-info" id="email" href="mailto:kristine@briede.lv?subject=Hello">kristine@briede.lv</a><br></p>
+      <button class="portfolio-btn" onclick="copyToClipboard('#email')"><span>Copy e-mail</span></button>
+      <br>
+      <br>
     </div>
   </div>
 </div>
@@ -55,7 +62,9 @@ src="images/location.png" alt="icon-with-location">
     <div class="w3-container">
       <span onclick="document.getElementById('id03').style.display='none'"
       class="w3-closebtn">&times;</span>
-      <p class="icon-modal"><br>Duntes iela, Rīga<br></p>
+      <p class="icon-modal"><br>My local region is Duntes street<br></p>
+      <iframe class="collapse-info" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8694.714701628282!2d24.12638797994971!3d56.98856327196165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfa70f523e35%3A0x955c083f26239063!2sDuntes%20iela%2C%20R%C4%ABga!5e0!3m2!1slv!2slv!4v1583402688017!5m2!1slv!2slv" 
+      width="600" height="300 frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
   </div>
 </div>
@@ -64,11 +73,16 @@ src="images/location.png" alt="icon-with-location">
   Starting my journey in IT field. 
   <br> I'm open up for new oportunities!
 </blockquote>  
+
+<section id="section06" class="demo scroll-down">
+  <a href="#experience" class="scroll-down"><span></span></a>
+</section>
+</div>
 </div>
 
-<hr>
+<br>
 
-<div class="experience">
+<div class="experience" id="experience">
   <h1 class="experience-title">My experience in IT field</h1>
   <br>
   <h3 class="courses">Courses</h3>
@@ -77,7 +91,7 @@ src="images/location.png" alt="icon-with-location">
               Janvary 2020 - March 2020
             </div>
             <div class="col">
-              Riga Coding School
+              <a href="https://rigacoding.lv/" target="_blank">„Riga Coding School”</a>
             </div>
             <div class="col">
               WEB development bootcamp
@@ -91,15 +105,17 @@ src="images/location.png" alt="icon-with-location">
 
   <h3 class="portfolio">Here are some of my developed WEB pages</h3>
   <br>
-  <h6>My GitHub projects are available here: <a href="https://github.com/KristinBried">GitHub</a></h6>
+  <h6>My GitHub projects are available here: <a href="https://github.com/KristinBried"><u>GitHub</u></a></h6>
   <br>
   <div class="row">
     <div class="col-lg-2">
     </div>
-    <div class="col">
-      <a href="https://kristinbried.github.io/Homework1/">My first homework in Riga Coding School</a></a>
+    <div class="col btn-col">
+      <button class="portfolio-btn" onclick=" window.open('https://kristinbried.github.io/Homework1/', '_blank'); return false;"><span>About stars</span></button>
     </div>
     <div class="col">
+      First homework in Riga Coding School.
+      <br>
       WEB page about stars. 
       <br>
       Used HTML and CSS.
@@ -111,10 +127,12 @@ src="images/location.png" alt="icon-with-location">
     <div class="row">
       <div class="col-lg-2">
       </div>
-      <div class="col">
-        <a href="https://kristinbried.github.io/Homework2/">My second homework in Riga Coding School</a></a>
+      <div class="col btn-col">
+        <button class="portfolio-btn" onclick=" window.open('https://kristinbried.github.io/Homework2/', '_blank'); return false;"><span>Llama page</span></button>
       </div>
       <div class="col">
+        Second homework in Riga Coding School.
+        <br>
         WEB page about lamas.
         <br>
         Used HTML and CSS. 
@@ -128,10 +146,12 @@ src="images/location.png" alt="icon-with-location">
       <div class="row">
         <div class="col-lg-2">
         </div>
-        <div class="col">
-          <a href="https://kristinbried.github.io/Homework3/">My third homework in Riga Coding School</a></a>
+        <div class="col btn-col">
+          <button class="portfolio-btn" onclick=" window.open('https://kristinbried.github.io/Homework3/', '_blank'); return false;"><span>FizzBuzz game</span></button>
         </div>
         <div class="col">
+          Third homework in Riga Coding School.
+          <br>
           Fizz Buzz game WEB page.
           <br>
           Used HTML, CSS and Java Script. 
@@ -143,10 +163,12 @@ src="images/location.png" alt="icon-with-location">
         <div class="row">
           <div class="col-lg-2">
           </div>
-          <div class="col">
-            <a href="https://kristinbried.github.io/Homework4_v2/.">My forth homework in Riga Coding School</a></a>
+          <div class="col btn-col">
+            <button class="portfolio-btn" onclick=" window.open('https://kristinbried.github.io/Homework4_v2/', '_blank'); return false;"><span>To-Do-list app</span></button>
           </div>
           <div class="col">
+            Forth homework in Riga Coding School.
+            <br>
             To Do list page.
             <br>
             Used HTML, CSS, Java Script and PHP. 
@@ -156,6 +178,7 @@ src="images/location.png" alt="icon-with-location">
 <hr>
 
   <h3 class="personal-rate">My personal rate of my knowledge</h3>
+  <br>
             <div class="row">
               <div class="col-lg-2">
               </div>
@@ -255,7 +278,7 @@ src="images/location.png" alt="icon-with-location">
     <div class="card">
       <div class="card-header" id="headingOne">
         <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne3"
+          <button class="btn btn-link"data-toggle="collapse" data-target="#collapseOne3"
           aria-expanded="false" aria-controls="collapseOne3">
             Additional Education
           </button>
@@ -264,11 +287,11 @@ src="images/location.png" alt="icon-with-location">
     </div>
   </div>
   
-  <div id="collapseOne3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3">
+  <div id="collapseOne3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion3" style="padding: 0">
       <div class="card-body">
           <div class="row">
             <div class="col">
-              <b><a href="https://www.mgconsulting.lv/">"MG Consulting"</a></b>
+              <b><a href="https://www.mgconsulting.lv/" target="_blank">"MG Consulting"</a></b>
             </div>
             <div class="col">
               February  - March 2017
@@ -282,7 +305,7 @@ src="images/location.png" alt="icon-with-location">
   
           <div class="row">
             <div class="col">
-              <b><a href="http://www.devox.lv/sakums/pardosana/">"Devox"</a></b>
+              <b><a href="http://www.devox.lv/sakums/pardosana/" target="_blank">"Devox"</a></b>
             </div>
             <div class="col">
               February 2014
@@ -296,7 +319,7 @@ src="images/location.png" alt="icon-with-location">
 
           <div class="row">
             <div class="col">
-              <b><a href="https://www.akmens-co.lv/">Driving school "Akmens un Co"</a></b>
+              <b><a href="https://www.akmens-co.lv/" target="_blank">Driving school "Akmens un Co"</a></b>
             </div>
             <div class="col">
               July – August 2011
@@ -325,7 +348,7 @@ src="images/location.png" alt="icon-with-location">
           <div class="card-body">
             <div class="row">
               <div class="col">
-                <b><a href="https://www.gjensidige.lv/">ADB "Gjensidige"</a></b>
+                <b><a href="https://www.gjensidige.lv/" target="_blank">ADB "Gjensidige"</a></b>
               </div>
               <div class="col">
                 Marketing and communication specialist
@@ -334,7 +357,11 @@ src="images/location.png" alt="icon-with-location">
                 October 2017 - March 2018
               </div>
               <div class="col">
-                Description
+                &#9656	Marketing project management.<br>
+                &#9656	Plan and coordinate marketing activities in different volumes and types
+                (Tdifferent campaigns, daily store activities etc.)<br>
+                &#9656	Small design providing by using Photoshop and Illustrator.<br>
+                &#9656	WEB page and Intranet updating.<br>
               </div>
             </div>
             
@@ -342,7 +369,7 @@ src="images/location.png" alt="icon-with-location">
             
             <div class="row">
               <div class="col">
-                <b><a href="http://www.somesebaltic.lv/lv">„SOMESE Baltic”</a></b>
+                <b><a href="http://www.somesebaltic.lv/lv" target="_blank">„SOMESE Baltic”</a></b>
               </div>
               <div class="col">
                 As company procurist
@@ -357,12 +384,9 @@ src="images/location.png" alt="icon-with-location">
               </div>
 
               <div class="col">
-                &#9656 Bussiness development, business management situation solving, business planning and other with business related task coordination.<br>
-                &#9656 Work with cooperation partners and clients.<br>
-                &#9656 Different type and level project management in Baltic countries.<br>
-                &#9656 Coordination of activities with state and private institutions.<br>
-                &#9656 Coordination of design preparing, WEB page development coordination.<br>
-                &#9656 Calculation of project profits, invoice preparing, preparing of statistics, all needed task coordination and providing.<br>
+                &#9656 Bussiness development and business management related tasks.<br>
+                &#9656 Coordination of different type and level project management in Baltic countries (included WEB page development).<br>
+                &#9656 Calculation of project profits, invoice preparing, preparing of statistics.<br>
               </div>
             </div>
 
@@ -370,7 +394,7 @@ src="images/location.png" alt="icon-with-location">
 
             <div class="row">
               <div class="col">
-                <b><a href="http://lamekoimpex.lv/">„Lameko Impex”</a></b>
+                <b><a href="http://lamekoimpex.lv/" target="_blank">„Lameko Impex”</a></b>
                 </div>
                 <div class="col">
                   Executive assistant
@@ -381,13 +405,14 @@ src="images/location.png" alt="icon-with-location">
               
               <div class="col">
                 &#9656	Assist to company’s director and shareholders.<br>
-                &#9656	Prepare daily and weekly reports, daily communication with shareholders, distributors, legal institutions and company partners.<br>
+                &#9656	Prepare daily and weekly reports, daily communication with shareholders, 
+                distributors, legal institutions and company partners.<br>
               </div>
             </div>
             <hr>
             <div class="row">
               <div class="col">
-                <b><a href="https://www.toppartika.lv/">„Iepirkumu grupa”</a></b>
+                <b><a href="https://www.toppartika.lv/" target="_blank">„Iepirkumu grupa”</a></b>
                 </div>
                 <div class="col">
                 Marketing specialist
@@ -397,11 +422,9 @@ src="images/location.png" alt="icon-with-location">
               </div>
               
               <div class="col">
-                 &#9656	Work with all departments in company and marketing project managing.<br>
-                &#9656	Communication and work with distributors and company partners.<br>
+                &#9656	Marketing project management.<br>
                 &#9656	Plan and coordinate marketing activities in different volumes and types
                 (TV campaigns, radio campaigns, daily store activities etc.)<br>
-                &#9656	Coordinate all type of projects and situations which are related to marketing.<br>
               </div>
             </div>
     

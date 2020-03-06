@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: black;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     letter-spacing: 1px;
 
@@ -57,7 +57,7 @@ html {
 }
 
 
-.btn-link {
+.card-header {
     color: black;
     font-weight: bolder;
     font-size: 20px;

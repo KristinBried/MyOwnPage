@@ -17,6 +17,11 @@ h1, h3, h6, h5 {
   font-weight: bolder;
 }
 
+.blockquote {
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}
+
 html {
 	scroll-behavior: smooth;
 }

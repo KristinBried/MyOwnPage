@@ -223,3 +223,10 @@ html {
          -o-transition: height .35s ease;
             transition: height .35s ease;
   }
+
+ @media screen and (max-width: 550px) {
+  .my-photo {
+    height: auto;
+    width: 50%;
+}
+ }

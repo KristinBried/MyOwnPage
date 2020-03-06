@@ -1,4 +1,5 @@
-  /*Scroll to top when arrow up clicked BEGIN*/
+ /*SIDE SCROLL FUNCTION STARTS*/
+
   $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
@@ -15,7 +16,11 @@ $(document).ready(function() {
     });
 
 });
- /*Scroll to top when arrow up clicked END*/
+
+ /*SIDE SCROLL FUNCTION ENDS*/
+
+
+/*COPY EMAIL TO CLIPBOARD STARTS*/
 
  function copyToClipboard(element) {
     var $temp = $("<input>");
@@ -25,10 +30,17 @@ $(document).ready(function() {
     $temp.remove();
   }
 
+  /*COPY EMAIL TO CLIPBOARD ENDS*/
+
+
+/* SMOOTH SCROLLING STARTS*/   
+
   $(function() {
     $('a[href*=#]').on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
+  
+  /* SMOOTH SCROLLING ENDS*/  
 

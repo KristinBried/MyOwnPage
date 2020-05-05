@@ -276,3 +276,28 @@ footer {
 	color: white;
 	
 }
+
+.Motivation-letter {
+	text-align: justify;
+	line-height: 2;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+}
+
+.Gap-end {
+	padding: 10%;
+}
+
+.contact-me {
+	font-size: 3vh;
+	text-align: right;
+}
+
+.motivation-heading {
+	text-align: center;
+}
+
+.motivation-para {
+	text-indent: 50px;
+}
